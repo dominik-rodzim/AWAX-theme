@@ -1,0 +1,44 @@
+.jumbotron {
+	background-image: url('/images/Bg_img_01.png');
+	height: calc(100vh - 96px);
+	margin-top: 96px;
+	padding: 0;
+	.container {
+		align-items: center;
+		justify-content: center;
+	    height: 100%;
+	    position: relative;
+	    h1 {
+	    	line-height: 69px;
+	    }
+	}
+	&__header-second-line {
+		color: $copper;
+	}
+	&__subheader {
+		text-transform: uppercase;
+		color: $white;
+		font-size: 24px;
+		font-weight: 600;
+	    margin-bottom: 45px;
+	}
+	.__dots {
+		width: 58px;
+		justify-content: space-between;
+		position: absolute;
+		bottom: 42px;
+		.dot {
+			height: 12px;
+			width: 12px;
+			border-radius: 50%;
+			border: 2px solid $copper;
+			&--active {
+				background-color: $copper;
+			}
+			&:hover {
+				background-color: $copper;
+				cursor: pointer;
+			}
+		}
+	}
+}

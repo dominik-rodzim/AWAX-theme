@@ -1,0 +1,85 @@
+h1 {
+	color: $white;
+	font-family: $primary-font;
+	font-size: 72px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-block-start: 0;
+	margin-block-end: 0;
+}
+h2 {
+	font-family: $primary-font;
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: $black;
+	margin-block-start: 0;
+	margin-block-end: 0;
+}
+h3 {
+
+}
+h4 {
+}
+h5 {
+	font-family: $primary-font;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: $sm-header-grey;
+}	
+h6 {
+}
+.subheader {
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: $sm-header-grey;
+}
+p {
+	font-family: $primary-font;
+	font-weight: 300;
+}
+.--font-sm {
+	font-size: 12px;
+}
+.--font-md {
+	font-size: 14px;
+}
+.--black {
+	color: #242424;
+}
+.--white {
+	color: $white;
+}
+a {
+}
+ul {
+}
+li {
+	text-decoration: none;
+}
+i {
+	width: 33px;
+	background-color: $i-grey;
+    line-height: 33px!important;
+    text-align: center;
+    border-radius: 50%;
+}
+button {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 194px;
+    height: 45px;
+    background-color: #b88b58;
+    border: none;
+    border-radius: 30px;
+    transition: .3s;
+    &:hover {
+    	background-color: $dark-grey;
+    	cursor: pointer;
+    }
+}

@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "jumbotron.css",
+	"sources": [
+		"../../sass/sections/jumbotron.scss"
+	],
+	"names": [],
+	"mappings": ""
+}

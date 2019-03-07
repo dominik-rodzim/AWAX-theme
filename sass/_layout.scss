@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+$break-lg: 1200px;
+$break-md: 992px;
+$break-sm: 768px;
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == break-sm {
+        @media only screen and (max-width: $break-sm) { @content };
+    }
+    @if $breakpoint == break-md {
+        @media only screen and (max-width: $break-md) { @content };
+    }
+    @if $breakpoint == break-lg {
+        @media only screen and (max-width: $break-lg) { @content };
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex__column-direction {
+  flex-direction: column;
+}
+
+section {
+  padding: 60px 0;
+}
