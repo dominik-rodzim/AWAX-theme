@@ -1,0 +1,59 @@
+.our-team {
+	background-image: url('/images/Bg_image.png');
+    background-size: cover;
+	.flex {
+		justify-content: space-between;
+		@include respond(break-md) {
+			justify-content: center;
+		}
+	}
+	&__item {
+		background: $white;
+		padding: 42px 12px;
+		margin: 25px 15px 0;
+		@include respond(break-lg) {
+			padding: 42px 15px;
+			margin: 10px 0 0;
+		}
+		@include respond(break-md) {
+			flex-basis: 100%;
+		    max-width: 400px;
+		}
+		&--last {
+		}
+		h4 {
+			font-size: 21px;
+			font-weight: 500;
+			text-transform: uppercase;
+			font-family: $primary-font;
+			margin-block-start: 0;
+			margin-block-end: 0;
+			margin-top: 40px
+		}
+		p {
+			margin-block-start: 10px;
+			margin-bottom: 35px;
+		}
+		&-icons {
+			text-align: center;
+		    width: min-content;
+    		margin: 0 auto;
+    		@include respond(break-md) {
+    			width: 100%;
+    		}
+			i {
+				line-height: 33px!important;
+				margin-right: 6px;
+				&:last-of-type {
+					margin-right: 0;
+				}
+			}			
+		}
+	}
+	.dots {
+		justify-content: space-between;
+		position: static;
+		margin: 0 auto;
+		margin-top: 55px;
+	}
+}

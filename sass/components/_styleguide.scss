@@ -7,6 +7,7 @@ h1 {
 	margin-block-start: 0;
 	margin-block-end: 0;
 }
+
 h2 {
 	font-family: $primary-font;
 	font-size: 30px;
@@ -16,65 +17,82 @@ h2 {
 	margin-block-start: 0;
 	margin-block-end: 0;
 }
-h3 {
 
-}
-h4 {
-}
 h5 {
 	font-family: $primary-font;
 	font-size: 14px;
 	font-weight: 400;
 	text-transform: uppercase;
 	color: $sm-header-grey;
-}	
-h6 {
 }
+
 .subheader {
 	font-size: 14px;
 	font-weight: 700;
 	text-transform: uppercase;
 	color: $sm-header-grey;
 }
+
 p {
 	font-family: $primary-font;
-	font-weight: 300;
+	font-weight: 500;
+	line-height: 25px;
 }
-.--font-sm {
+
+span {
+	font-family: $primary-font;
+}
+
+.font--sm {
 	font-size: 12px;
 }
-.--font-md {
+
+.font--md {
 	font-size: 14px;
 }
-.--black {
+
+.font--black {
 	color: #242424;
 }
-.--white {
+
+.font--white {
 	color: $white;
 }
+
 a {
 }
+
 ul {
 }
+
 li {
 	text-decoration: none;
 }
+
 i {
 	width: 33px;
 	background-color: $i-grey;
-    line-height: 33px!important;
+    line-height: 33px;
     text-align: center;
     border-radius: 50%;
+    color: $white;
+    height: 33px;
+    transition: .3s;
+    &:hover {
+    	background-color: $copper;
+    	cursor: pointer;
+    }
 }
+
 button {
-    color: #ffffff;
+    color: $white;
     font-family: Montserrat;
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
     width: 194px;
     height: 45px;
-    background-color: #b88b58;
+    background-color: $copper;
     border: none;
     border-radius: 30px;
     transition: .3s;
@@ -82,4 +100,40 @@ button {
     	background-color: $dark-grey;
     	cursor: pointer;
     }
+}
+
+.round-btn {
+	width: 65px;
+	height: 65px;
+	box-shadow: 0 3px 8px rgba(0, 0, 1, 0.24);
+	background-color: $copper;
+	color: $white;
+	font-size: 30px;
+	border-radius: 50%;
+	margin: 0;
+	line-height: 65px;
+	i {
+		margin: 0!important;
+		line-height: 65px;
+		background: none;
+	}
+}
+
+.dots {
+	width: 58px;
+	justify-content: space-between;
+	margin: 0 auto;
+	.dot {
+		height: 12px;
+		width: 12px;
+		border-radius: 50%;
+		border: 2px solid $copper;
+		&--active {
+			background-color: $copper;
+		}
+		&:hover {
+			background-color: $copper;
+			cursor: pointer;
+		}
+	}
 }

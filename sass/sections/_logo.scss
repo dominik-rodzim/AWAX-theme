@@ -1,0 +1,14 @@
+.logo {
+	background-color: $white;
+	border: 1px solid #cfcfcf;
+	.flex {
+		justify-content: space-between;
+	}
+	img {
+		@include respond(break-sm) {
+			width: 50%;
+			margin-bottom: 20px;
+			object-fit: contain;
+		}
+	}
+}

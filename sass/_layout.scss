@@ -19,20 +19,25 @@ $break-sm: 768px;
 }
 
 .container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 60px 30px;
 }
 
 .flex {
   display: flex;
+  @include respond(break-md) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .flex__column-direction {
   flex-direction: column;
 }
 
-section {
-  padding: 60px 0;
+.display-element {
+  display: block!important;
 }

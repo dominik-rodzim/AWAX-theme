@@ -1,0 +1,63 @@
+.features {
+	> .flex:first-of-type {
+		margin-top: 30px;
+		@include respond(break-md) {
+			flex-direction: column;
+		}
+	}
+	&__img-container {
+		flex-basis: 50%;
+		width: 100%;
+			@include respond(break-md) {
+			img {
+				width: 100%;
+			    height: 100%;
+			}
+		}
+	}
+	&__text {
+		flex-basis: 50%;
+		&-single {
+			text-align: left;
+			position: relative;
+			@include respond(break-md) {
+				margin-left: 40px;
+			}
+			h3 {
+				font-family: $primary-font;
+				font-size: 21px;
+				text-transform: uppercase;
+				font-weight: 700;
+				margin-block-end: 0;
+				margin-top: 30px;
+			}
+			p {
+				color: #5b5b5b;
+				line-height: 27px;
+				margin-block-start: 0;
+			}
+			&::before {
+				content: "";
+				width: 34px;
+				height: 30px;
+				display: block;
+				background-image: url('/images/icon.png');
+				position: absolute;
+				top: 0;
+				left: -65px;
+				@include respond(break-md) {
+					left: -48px;
+				}
+			}
+		}
+	}
+	&__divider {
+		width: 100%;
+		height: 1px;
+		background-color: #cfcfcf;
+		margin: 50px 0;
+	}
+	button {
+		margin-top: 40px;
+	}
+}

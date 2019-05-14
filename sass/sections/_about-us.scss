@@ -1,0 +1,21 @@
+.about-us {
+	background-color: $bg-grey;
+	.subheader {
+		margin-bottom: 30px;
+	}
+	&__text {
+		text-align: left;
+		padding-right: 40px;
+		p {
+			margin-bottom: 30px;
+		}
+	}
+	&__video {
+		img {
+			@include respond(break-md) {
+				width: 100%;
+				margin-top: 30px
+			}
+		}
+	}
+}

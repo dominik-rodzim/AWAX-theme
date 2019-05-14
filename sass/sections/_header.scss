@@ -6,14 +6,56 @@ header {
     top: 0;
 	z-index: 999999;
     width: 100%;
+    @include respond(break-md) {
+    	position: static;
+    	height: auto;
+    }
 	.container {
 		justify-content: space-between;
 		align-items: center;
+		position: relative;
+		@include respond(break-md) {
+			flex-direction: column;
+			padding: 0;
+		}
+		.logo-container {
+			@include respond(break-md) {
+				margin: 20px 0;
+			}
+		}
+		#mobile-menu {
+			display: none;
+			@include respond(break-md) {
+				display: block;
+			    position: absolute;
+			    top: 30px;
+			    right: 20px;
+			    color: white;
+			}
+			i {
+			    background-color: unset;
+			    font-size: 25px;
+			}
+		}
 		nav {
 		    height: 100px;
 	    	align-items: center;
+	    	@include respond(break-md) {
+	    		width: 100%;
+	    		height: auto;
+			}
 			.menu {
 				list-style: none;
+				@include respond(break-md) {
+				    flex-direction: column;
+				    padding: 0;
+				    width: 100%;
+				    display: none;
+				    position: absolute;
+				    top: -16px;
+				    z-index: 1;
+				}
+
 				&__item {
 					font-family: $primary-font;
 					font-weight: 700;
@@ -21,9 +63,13 @@ header {
 					text-transform: uppercase;
 					font-size: 14px;
 					padding: 39px 10px;
-					height: 100%;
+					height: 95px;
 					position: relative;
 					background-color: black;
+					@include respond(break-md) {
+						padding: 10px;
+						height: 40px!important;
+					}
 					&:hover {
 						border-bottom: 5px solid $copper;
 						height: 95px;

@@ -1,0 +1,43 @@
+.services {
+	background: $black;
+	&__item {
+		margin-top: 30px;
+		padding: 20px;
+		border-left: 2px solid #3a3a3a;
+		@include respond(break-md) {
+			border-left: none;
+			flex-basis: 100%;
+		}
+		&--last {
+			border-right: 2px solid #3a3a3a;	
+			@include respond(break-md) {
+				border-right: none;
+			}
+		}
+		i {
+		    background: none;
+		    color: #B88B58;
+		    font-size: 58px;
+		    width: 100%;
+		    line-height: 100%;
+		    margin-bottom: 30px;
+		}
+		.services__heading {
+			color: white;
+			font-family: $primary-font;
+			text-transform: uppercase;
+			font-size: 18px;
+			font-weight: 600;
+		    padding: 0px 45px;
+		    margin-block-start: 0;
+		    margin-block-end: 0;
+		    line-height: 24px;
+		}
+		.services__description {
+			color: #7e7e7e;
+		    line-height: 18px;
+    		font-weight: 500;
+		}
+
+	}
+}

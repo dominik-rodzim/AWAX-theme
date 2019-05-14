@@ -1,0 +1,38 @@
+.facts {
+	background-color: $black;
+	.flex {
+	    justify-content: space-between;
+	}
+	&__item {
+		flex-basis: 19%;
+		@include respond(break-md) {
+			flex-basis: 49%
+		}		
+		@include respond(break-sm) {
+			flex-basis: 100%
+		}		
+		&-number {
+			font-size: 48px;
+			font-weight: 700;
+			color: $copper;
+			margin-block-end: 25px;
+		}
+		&-divider {
+			width: 20px;
+		    height: 4px;
+		    background: #777777;
+		    display: block;
+		    margin: 0 auto;		
+		}
+		&-header {
+			color: white;
+		    font-family: Montserrat;
+		    text-transform: uppercase;
+		    font-size: 18px;
+		    margin-block-start: 10px;
+		}
+		&-text {
+			color: #7e7e7e;
+		}
+	}
+}
